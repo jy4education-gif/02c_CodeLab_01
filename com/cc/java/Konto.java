@@ -3,18 +3,24 @@ package com.cc.java;
 
 public class Konto {
 
-    private int kontostand;    // Instanzvariable 'kontostand' verhindert Zugriff von draußen
+    private final int initialerKontostand;
+    private int aktuellerKontostand;    // Instanzvariable 'aktuellerKontostand' verhindert Zugriff von draußen
 
-    public Konto(int kontostand) {  // Konstruktor: wird aufgerufen wenn 'new Konto(...)' aufgerufen wird.
-        this.kontostand = kontostand;
+    public Konto(int startwert) {  // Konstruktor: wird aufgerufen wenn 'new Konto(...)' aufgerufen wird.
+        this.initialerKontostand = startwert;
+        this.aktuellerKontostand = startwert;
     }
 
-    public int getKontostand() {
-        return kontostand;
+    public int getInitialerKontostand() {
+        return initialerKontostand;
     }
 
-    public void setKontostand(int kontostand){
-        this.kontostand = kontostand;
+    public int getAktuellerKontostand() {
+        return aktuellerKontostand;
+    }
+
+    public void setAktuellerKontostand(int neuerStand){
+        this.aktuellerKontostand = neuerStand;
     }
   
 }
