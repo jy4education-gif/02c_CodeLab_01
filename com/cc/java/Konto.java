@@ -3,9 +3,9 @@ package com.cc.java;
 
 public class Konto {
 
-    private int kontostand;    
+    private int kontostand;    // verhindert Zugriff von draußen
 
-    public Konto(int kontostand) {
+    public Konto(int kontostand) {  // Konstruktor: wird aufgerufen wenn 'new Konto(...)' aufgerufen wird.
         this.kontostand = kontostand;
     }
 

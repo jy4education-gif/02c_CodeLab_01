@@ -4,7 +4,7 @@ public class App {
     
     public static void main(String[] args) {
     
-        Konto konto1 = new Konto(10000);
+        Konto konto1 = new Konto(10000);  // Instanziierung
         Konto konto2 = new Konto(10000);
         Konto konto3 = new Konto(10000);
 
